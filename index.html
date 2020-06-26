@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="calc ">
+        <div class="container cbox">
+            <form name="calcform">
+                <input type="text" id="result" name="txt1" placeholder="0"
+                class="text-right border-bottom bg-light ca " placeholder="0"> <br> <br>
+
+                <input type="button" class="bg-warning bb bp" value=" C " onclick="clearResult()">
+                
+
+                <input type="button" class="bm bb" name="rembtn" value="%" onclick="getNumber('%')">
+                <input type="button" class="bm bb" name="divbtn" value="/" onclick="getNumber('/')"> <br> <br>
+
+                <input type="button" name="btn9" class="bg-primary bb" value="9" onclick="getNumber('9')">
+                <input type="button" name="btn8" class="bg-primary bb" value="8" onclick="getNumber('8')">
+                <input type="button" name="btn7" class="bg-primary bb" value="7" onclick="getNumber('7')">
+                <input type="button" class="bm bb" name="btnmul" value="*" onclick="getNumber('*')"> <br> <br>
+
+                <input type="button" name="btn6" class="bg-primary bb" value="6" onclick="getNumber('6')">
+                <input type="button" name="btn5" class="bg-primary bb" value="5" onclick="getNumber('5')">
+                <input type="button" name="btn4" class="bg-primary bb" value="4" onclick="getNumber('4')">
+                <input type="button" class="bm bb" name="subbtn" value="-" onclick="getNumber('-')"> <br> <br>
+
+                <input type="button" name="btn3" class="bg-primary bb" value="3" onclick="getNumber('3')">
+                <input type="button" name="btn2" class="bg-primary bb" value="2" onclick="getNumber('2')">
+                <input type="button" name="btn1" class="bg-primary bb" value="1" onclick="getNumber('1')">
+                <input type="button" class="bm  bb" name="addbtn" value="+" onclick="getNumber('+')"> <br> <br>
+
+                <input type="button" name="btn0" class="bg-primary bb" value="0" onclick="getNumber('0')">
+                <input type="button" name="dotbtn" class="bg-primary bb" value="." onclick="getNumber('.')">
+                <input type="button" name="eqlbtn" class="bg-success bb bp" value="="
+                onclick="getResult()">
+
+
+
+
+
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+
+
+<script>
+
+    //to get number
+    function getNumber(num) {
+        var result = document.getElementById("result");
+        result.value += num
+    }
+
+    //to clear input field
+    function clearResult(){
+        var result = document.getElementById("result");
+        result.value = " "
+    }
+
+    //result value
+    function getResult(){
+        var result = document.getElementById("result");
+        result.value = eval(result.value)
+    }
+
+</script>
+
+</html>
+
+
+
+
+
+
+

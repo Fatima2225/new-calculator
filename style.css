@@ -1,0 +1,40 @@
+.calc{
+    height: 600px;
+    width: 80%;
+    background-color:papayawhip;
+    margin: 25px 30px 20px 120px;
+    border: 10px solid pink;
+}
+.cbox{
+    margin: 80px 40px 20px 370px;
+    padding: 30px;
+    border: 5px solid black;
+    width: 25%;
+    height: 450px;
+    background-color: lightcyan;
+    border-radius: 20px;
+
+}
+.bb{
+    border-radius: 30px;
+    height: 40px;
+    width: 40px;
+    font-weight: bold;
+    box-shadow: 1px -2px 2px gray;
+    margin: 2px;
+
+}
+.bm{
+    background-color: aqua;
+}
+.bp{
+    width: 83px;
+}
+.ca{
+    height: 50px;
+    width: 180px;
+    background-color:ghostwhite;
+    font-size: 20px;
+    
+    
+}
